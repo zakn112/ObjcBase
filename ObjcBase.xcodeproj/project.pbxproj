@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		332AC92B2443167B00B264EE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 332AC92A2443167B00B264EE /* main.m */; };
+		33C8F1C32459F1C00087F81D /* Bird.m in Sources */ = {isa = PBXBuildFile; fileRef = 33C8F1C22459F1C00087F81D /* Bird.m */; };
+		33C8F1C62459F37B0087F81D /* Flock.m in Sources */ = {isa = PBXBuildFile; fileRef = 33C8F1C52459F37B0087F81D /* Flock.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +27,10 @@
 /* Begin PBXFileReference section */
 		332AC9272443167B00B264EE /* ObjcBase */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = ObjcBase; sourceTree = BUILT_PRODUCTS_DIR; };
 		332AC92A2443167B00B264EE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		33C8F1C12459F1C00087F81D /* Bird.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Bird.h; sourceTree = "<group>"; };
+		33C8F1C22459F1C00087F81D /* Bird.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Bird.m; sourceTree = "<group>"; };
+		33C8F1C42459F37B0087F81D /* Flock.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Flock.h; sourceTree = "<group>"; };
+		33C8F1C52459F37B0087F81D /* Flock.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Flock.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +64,10 @@
 			isa = PBXGroup;
 			children = (
 				332AC92A2443167B00B264EE /* main.m */,
+				33C8F1C12459F1C00087F81D /* Bird.h */,
+				33C8F1C22459F1C00087F81D /* Bird.m */,
+				33C8F1C42459F37B0087F81D /* Flock.h */,
+				33C8F1C52459F37B0087F81D /* Flock.m */,
 			);
 			path = ObjcBase;
 			sourceTree = "<group>";
@@ -119,6 +129,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				33C8F1C62459F37B0087F81D /* Flock.m in Sources */,
+				33C8F1C32459F1C00087F81D /* Bird.m in Sources */,
 				332AC92B2443167B00B264EE /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -238,6 +250,7 @@
 		332AC92F2443167B00B264EE /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = NO;
 				CODE_SIGN_STYLE = Automatic;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -246,6 +259,7 @@
 		332AC9302443167B00B264EE /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = NO;
 				CODE_SIGN_STYLE = Automatic;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
